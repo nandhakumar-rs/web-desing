@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #fff;
+    color: rgb(51, 51, 51);
+    font-family: 'Lato','Arial','san-serif';
+    font-weight: 300;
+    font-size: 30px;
+    text-rendering: optimizeLegibility;
+
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.705)),url(../images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+
+}
+.title{
+    margin:0px;
+    color: #c0392b;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+h2{
+    font-size: 180%;
+    text-align: center;
+    word-spacing: 3px;
+    margin:0px;
+    color: #c0392b;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+margin-bottom: 30px
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #c0392b;
+    content: '';
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+.textbox{
+    position:absolute;
+    width: 1140px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius:200px;
+    transition: background-color 0.4s,border 0.4s,color  0.4s;
+}
+.btn-one{
+    background-color: #c0392b;
+    border: 2px solid  #c0392b;
+    color: #fff;
+
+
+}
+.btn-one:hover,.btn-one:hover{
+    background-color: #551c16;
+    border: 2px solid  #551c16;
+
+}
+.btn-two{
+    color: #c0392b;
+    border: 2px solid  #c0392b;
+}
+
+.btn-two:hover,.btn-two:hover{
+    background-color: #c0392b;;
+    border: 2px solid  #c0392b;
+    color: #fff
+
+}
+.navi{
+    float: right;
+    list-style:none;
+    margin-top:55px 
+}
+
+.navi li{
+   
+    display: inline-block;
+    margin-left:10px;
+
+}
+.navi li a:link,.navi li a:visited{
+    text-decoration: none;
+    color: #fff;
+    font-size: 80%;
+    padding: 10px 0 ;
+    transition: border-bottom 0.2s;
+    border-bottom: 2px transparent;
+
+
+}
+.navi li a:hover,.navi li a:active{
+border-bottom: #c0392b 2px solid;
+}
+
+section{
+    padding: 80px 0;
+}
+.showcase{
+    padding:0;
+}
+section p {
+    line-height: 145%;
+    font-weight: 100;
+
+}
+.pic-section{
+    list-style: none;
+    width: 100%
+}
+.pic-section li{
+
+display: block;
+float: left;
+width: 25%;
+}
+
+.pic{
+background-color: black;
+    width: 100%;
+    margin:0;
+    overflow: hidden;
+}
+.pic img{
+    opacity: 0.6;
+    width: 100%;
+    transition: transform 0.4s, opacity 0.4s ;
+    transform: scale(1.15);
+   
+}
+.pic  img:hover{
+    opacity: 1;
+    transform: scale(1);
+}
