@@ -8,7 +8,7 @@ html{
     color: rgb(51, 51, 51);
     font-family: 'Lato','Arial','san-serif';
     font-weight: 300;
-    font-size: 30px;
+    font-size: 20px;
     text-rendering: optimizeLegibility;
 
 }
@@ -25,34 +25,45 @@ header{
 }
 .title{
     margin:0px;
-    color: #c0392b;
+    color: #FFA500;
     font-size: 240%;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 3px;
 }
-h2{
-    font-size: 180%;
-    text-align: center;
-    word-spacing: 3px;
-    margin:0px;
-    color: #c0392b;
+
+h2,
+h3 {
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1px;
-margin-bottom: 30px
 }
-h2:after{
+
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
     display: block;
     height: 2px;
-    background-color: #c0392b;
-    content: '';
+    background-color: #FFA500;
+    content: " ";
     width: 100px;
     margin: 0 auto;
     margin-top: 30px;
-
+   
 }
+
 .textbox{
     position:absolute;
     width: 1140px;
@@ -62,34 +73,35 @@ h2:after{
 
 }
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     font-weight: 300;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius:200px;
-    transition: background-color 0.4s,border 0.4s,color  0.4s;
+    transition: background-color 0.2s,border 0.2s,color  0.2s;
 }
 .btn-one{
-    background-color: #c0392b;
-    border: 2px solid  #c0392b;
+    background-color: #FFA500;
+    border: 1px solid  #FFA500;
     color: #fff;
 
 
 }
 .btn-one:hover,.btn-one:hover{
-    background-color: #551c16;
-    border: 2px solid  #551c16;
+    background-color: rgb(192, 125, 1);
+    border: 1px solid  rgb(192, 125, 1);
+
 
 }
 .btn-two{
-    color: #c0392b;
-    border: 2px solid  #c0392b;
+    color: #FFA500;
+    border: 1px solid  #FFA500;
 }
 
 .btn-two:hover,.btn-two:hover{
-    background-color: #c0392b;;
-    border: 2px solid  #c0392b;
+    background-color: #FFA500;;
     color: #fff
 
 }
@@ -116,7 +128,7 @@ h2:after{
 
 }
 .navi li a:hover,.navi li a:active{
-border-bottom: #c0392b 2px solid;
+border-bottom: #FFA500 2px solid;
 }
 
 section{
@@ -156,5 +168,254 @@ background-color: black;
 }
 .pic  img:hover{
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1.10);
+}
+.step:first-child
+{
+text-align: right;
+padding-right: 3%;
+}
+.step:last-child
+{
+padding-left: 3%;
+
+}
+.mobile{
+    width: 40%;
+
+}
+.number{
+    margin-bottom: 30px;
+}
+.number div{
+    border: 2px solid #FFA500;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    float: left;
+    display: inline-block;
+   margin-right: 3%;
+   color:#FFA500;
+}
+.number p{
+    padding: 10px;
+}
+.btn-app img{
+    margin-top: 20%;
+    width:auto;
+    margin-right: 3%;
+}
+.btn-app:link,.btn-app:visited{
+    border:0;
+}
+.clearfix{
+    zoom:1
+}
+.clearfix::after{
+    content:'.';
+    clear: both;
+    visibility: hidden;
+    display: block;
+    height: 0;
+}
+
+.city-image{
+    width: 100%;
+    height: auto;
+
+}
+.descrip{
+    margin-top: 30px;
+}
+a:link,
+a:visited{
+    font-size: 90%;
+    text-decoration: none;
+    color: #FFA500;
+    border-bottom: 1px solid #FFA500;
+    padding-bottom: 5px;
+transition: color 0.3s, border-bottom 0.3s;
+}
+a:hover,a:active{
+    color: #555;
+    border-bottom: transparent;
+
+}
+.mobile-view{
+    background-color: rgb(230, 228, 228) 
+}
+
+.review-sec{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.705)),url('../images/big-hero.jpg');
+background-position: relative;
+background-attachment:fixed;
+color: #fff;
+    background-size: cover;
+}
+
+blockquote{
+    font-style: italic;
+    padding:3%;
+    line-height: 140%;
+    font-weight: 50;
+    position: relative;
+}
+blockquote:before{
+    content: '\201C';
+    font-size: 40px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+cite{
+font-size: 90%;
+font-weight: 50;
+display: block;
+margin-top: 30px; 
+}
+cite img{
+    border-radius: 50%;
+    height: 50px;
+    width:50px;
+vertical-align: middle;
+margin-right: 10px;
+}
+
+.pricing-sec{
+    background-color:rgb(230, 228, 228) 
+}
+
+.card div ul{
+    list-style: none;
+
+}
+.card div li{
+padding:10px 0; 
+}
+.card{
+    background-color:#fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+.card div:last-child{
+    text-align: center;
+    border:0;
+}
+.card div:first-child{
+background-color: rgb(243, 242, 242);
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;}
+.card div{
+    padding: 15px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.price{
+    font-size: 300%;
+    font-weight: 100;
+    color: #FFA500	;
+}
+
+.price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.features{
+    padding: 10px;
+}
+
+.contact-sec{
+    width: 55%;
+    margin:0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    padding:7px;
+    border-radius: 3px;
+    width: 100%;
+    border:solid 1px rgb(167, 167, 167);
+}
+
+textarea{
+    height: 100px;
+}
+
+*:focus{
+    outline: none;
+}
+.footer-links{ 
+    
+    float: left;
+list-style: none;
+}
+.footer-icon-links{
+  
+    float: right;
+    list-style: none;
+  }
+  .footer-links li,.footer-icon-links li{
+    display: inline-block;
+   margin-right: 10px;
+   margin-top:10px; 
+   padding: 20px 5;
+  }
+  .footer-icon-links li a:link,.footer-icon-links li a:visited{
+    color: #888;
+    border: 0;
+    transition: color 0.3s; 
+    font-size: 140%;
+  }
+  .footer-links li a:link,.footer-links li a:visited{
+      color: #888;
+   border: 0;
+   transition: color 0.3s; 
+  }
+  .footer-links li a:hover, .footer-links li a:active{
+color: #ddd;
+}
+
+.logo-facebook:hover{
+    color: #3b5998;
+}
+.logo-instagram:hover{
+    color: #517fa4;
+}
+.logo-google:hover{
+    color: #dd4b39;
+}
+
+.footer-icon-links li:last-child{
+    margin-right: 0px;
+   
+
+}
+footer{
+    background-color: #333;
+    font-size: 80%; 
+}
+footer p:first-child{
+    text-align: center;
+    font-size: 80%;
+    margin: 30px 0;
+color: #888;
+
+}
+
+footer p:last-child{
+    text-align: center;
+    font-size: 80%;
+    margin: 15px 0 30px;
+color: #888;
+}
+
+footer p ion-icon{
+    color: red;
 }
